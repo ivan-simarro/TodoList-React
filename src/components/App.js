@@ -108,12 +108,14 @@ export default function App() {
                 >
                   {!t.isCompleted ? "Done!" : "Not Done"}
                 </button>
+              {!t.isCompleted && 
                 <button
                   className="todo__list--button"
                   onClick={(e) => handleInput(e, t)}
                 >
                   Edit
                 </button>
+              }
                 <button
                   className="todo__list--button"
                   onClick={(e) => handleDelete(e, t)}
